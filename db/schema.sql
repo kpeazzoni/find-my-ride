@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS carfinder_db;
+CREATE DATABASE carfinder_db;

@@ -1,0 +1,28 @@
+{
+  "name": "find-my-ride",
+  "version": "1.0.0",
+  "description": "Project 2- UTA Bootcamp - User will be able to look up used cars in their area and save the cars they are interested in.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kpeazzoni/find-my-ride.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kpeazzoni/find-my-ride/issues"
+  },
+  "homepage": "https://github.com/kpeazzoni/find-my-ride#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "handlebars": "^4.7.7",
+    "msql": "^1.0.3",
+    "mysql2": "^3.1.2",
+    "sequelize": "^6.28.0",
+    "session": "^0.1.0"
+  }
+}
