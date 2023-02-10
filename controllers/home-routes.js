@@ -2,7 +2,7 @@
 // else- display  res.render('signup')
 const router = require('express').Router();
 const { User} = require('../models');
-const withAuth = require('../utils');
+const withAuth = require('../utils/Auth');
 
 router.get('/', withAuth, async (req, res) => {
     try{
