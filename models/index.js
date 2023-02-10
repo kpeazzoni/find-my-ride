@@ -1,4 +1,4 @@
-// this will be the start of models for rout
+// this will be the start of models for route
 const User = require('./User')
 const Car = require('./Car')
 
