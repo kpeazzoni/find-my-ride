@@ -1,1 +1,27 @@
 {{!-- body of landing page that contains search handlebars link --}}
+<section class="login"
+{{login}}
+</section>
+<!-- Loop over each object in the projects array -->
+{{#each searches as |search| }}
+<div class="row mb-4 project">
+  <div class="col-md-5">
+    <h2>
+      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+      {{{get_emoji}}}
+      <a href="/history/{{search.id}}"></a>
+    </h2>
+    <p>
+      <!-- Pass needed_funding value to the helper function -->
+      <span class="history">{{search.result}}</span>
+      needed!
+    </p>
+    <p>User: {{user.name}}</p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{search.result}}
+    </p>
+  </div>
+</div>
+{{/each}}
