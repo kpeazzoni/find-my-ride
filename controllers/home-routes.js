@@ -19,13 +19,12 @@ router.get('/', withAuth, async (req, res) => {
             user,
             logged_in: req.session.logged_in,
         }
-        
-        );
+    );
         
     }catch (err) {
         res.status(500).json(err);
     }
-    await res.render('signup')
+    res.render('login')
 });
 
 router.get('/login', (req, res) => {
@@ -35,6 +34,15 @@ router.get('/login', (req, res) => {
         return;
     }
     res.render('login');
+    
+});
+
+router.get('/profile', (req, res) => {
+    console.log('logged in: ' + req.session.logged_in);
+    if (req.session.logged_in) {
+        res.render('profile');
+    }
+    res.redirect('login');
     
 });
 
