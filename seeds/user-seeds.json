@@ -1,7 +1,5 @@
-const user =
 [
     {
-    
       "name": "Karen",
       "email": "karen@me.com",
       "password": "password123"
@@ -21,4 +19,4 @@ const user =
         "email": "bennett@me.com",
         "password": "password123"
     }
-];
+]
