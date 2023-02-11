@@ -1,5 +1,3 @@
-const { User } = require('../models');
-
 const user =
 [
     {
@@ -24,7 +22,3 @@ const user =
         "password": "password123"
     }
 ];
-
-const seedUsers = () => User.bulkCreate(user);
-
-module.exports = seedUsers;
