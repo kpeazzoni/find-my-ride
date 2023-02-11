@@ -25,7 +25,6 @@ router.get('/', withAuth, async (req, res) => {
     }catch (err) {
         res.status(500).json(err);
     }
-    await res.render('signup')
 });
 
 router.get('/login', (req, res) => {
