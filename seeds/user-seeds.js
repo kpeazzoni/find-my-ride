@@ -1,3 +1,4 @@
+const user =
 [
     {
     
@@ -20,4 +21,4 @@
         "email": "bennett@me.com",
         "password": "password123"
     }
-]
+];
