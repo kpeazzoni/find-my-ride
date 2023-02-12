@@ -1,7 +1,6 @@
 // js for search goes here profile.handlebars
 const carDataSearchHandler = async (event) => {
     event.preventDefault();
-    console.log("searching for cars...");
     // Collect values from the login form
     var make = document.querySelector('#carMake option:checked').value.trim();
     var year = document.querySelector('#carYear option:checked').value.trim();
@@ -15,24 +14,25 @@ const carDataSearchHandler = async (event) => {
     };
     const response = await fetch(`https://car-data.p.rapidapi.com/cars?limit=15&page=0&year=${year}&make=${make}`, options);
     const json = await response.json();
-            for (var i = 0; i < json.length; i++) {
-            console.log('this is data', json);
-            // var carMake = json[i].make;
-            // var carYear = json[i].year;
-            // var carModel = json[i]
+    for (var i = 0; i < json.length; i++) {
+        let carWrapper = document.createElement('div');
+        carWrapper.className = "car-item";
+        carWrapper.style.cssText = 'border-radius: 25px;border: 2px solid black;padding: 20px;margin-bottom: 20px;width:200px;height:200px;';
+    
+        let carMake = document.createElement('h1');
+        let carYear = document.createElement('h2');
+        let carModel = document.createElement('h2');
         
-            let carMake = document.createElement('h3');
-            let carYear = document.createElement('h3');
-            let carModel = document.createElement('h3');
-            
-            carMake.textContent = json[i].make;
-            carYear.textContent = json[i].year;
-            carModel.textContent = json[i].model;
-            
-            carList.append(carMake);
-            carList.append(carYear);
-            carList.append(carModel);
-        }
+        carMake.textContent = json[i].make;
+        carYear.textContent = json[i].year;
+        carModel.textContent = json[i].model;
+        
+        carWrapper.append(carMake);
+        carWrapper.append(carYear);
+        carWrapper.append(carModel);
+
+        carList.append(carWrapper);
+}
 };
 
 document
