@@ -1,43 +1,57 @@
-<form>
-  <lable>Make</lable>
-  <select>
-    <option>Select</option>
-    <option value="this.make">Jeep</option>
-    <option value="this.make">Ram</option>
-    <option value="this.make">Dodge</option>
-    <option value="this.make">Chevrolet</option>
-  </select>
-  <lable>Model</lable>
+<div class="row">
+  <div class="col-auto">
+    <h2>Welcome, {{name}}!</h2>
+  </div>
+</div>
+<form class="form search-form">
+  <div class="form-group">
+    <label>Make</label>
+    <select id="carMake">
+      <option>Select</option>
+      <option value="Jeep">Jeep</option>
+      <option value="Ram">Ram</option>
+      <option value="Dodge">Dodge</option>
+      <option value="Chevrolet">Chevrolet</option>
+    </select>
+  </div>
+  {{!-- <label>Model</label>
   <select>
     <option>Select</option>
     <option value="this.model">Gladiator</option>
     <option value="this.model">TRX</option>
     <option value="this.model">Challenger</option>
     <option value="this.model">Corvette</option>
-  </select>
-  <lable>Year</lable>
-  <select>
-    <option>Select</option>
-    <option value="this.year">2023</option>
-    <option value="this.year">2022</option>
-    <option value="this.year">2021</option>
-    <option value="this.year">2020</option>
-  </select>
-  <lable>Color</lable>
+  </select> --}}
+  <div class="form-group">
+    <label>Year</label>
+    <select id="carYear">
+      <option>Select</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+      <option value="2021">2021</option>
+      <option value="2020">2020</option>
+    </select>
+  </div>
+  {{!-- <label>Color</label>
   <select>
     <option>Select</option>
     <option value="this.color">Red</option>
     <option value="this.color">Orange</option>
     <option value="this.color">Blue</option>
     <option value="this.color">Purple</option>
-  </select>
-  <input type="submit" value="submit"> 
+  </select> --}}
+   <div class="form-group">
+      <button class="btn btn-primary" type="submit">search</button>
+   </div>
 </form>
-
+<div id="carList">
+  
+</div>
 <section class="search">
   {{search}}
 </section>
 
+<script src="./js/profile.js"></script>
 
 
 
