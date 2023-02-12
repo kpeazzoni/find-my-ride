@@ -32,7 +32,9 @@ User.init(
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [8],
+        len: {
+          msg: "password must be at least 8 characters",
+          args: [8]},
       },
     },
   },
