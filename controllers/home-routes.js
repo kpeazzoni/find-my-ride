@@ -23,26 +23,30 @@ router.get('/', withAuth, async (req, res) => {
     }
 });
 
-router.get('/login', (req, res) => {
+// router.get('/login', (req, res) => {
     
-    if (req.session.logged_in) {
-        res.render('/');
-    }
-    else {
-        res.render('login');
-    }
-});
+//     if (req.session.logged_in) {
+//         res.render('/');
+//     }
+//     else {
+//         res.render('login');
+//     }
+// });
 
-router.get('/profile', (req, res) => {
-    if (req.session.logged_in) {
-        console.log('redirecting to profile page..');
-        res.render('profile', {
-            logged_in: req.session.logged_in,
-        });
+router.get('/profile', async (req, res) => {
+    const userId = req.session.user_id;
+    const user = await User.findOne({
+        where: { id: userId },
+        attributes: { exclude: ['password']}
+    });
+    const userData = user.get({ plain: true });
+console.log(userData);
+
+    res.render('profile', {
+        ...userData,
+        logged_in: req.session.logged_in,
     }
-    else {
-        res.redirect('login');
-    } 
+);
 });
 
 module.exports = router;

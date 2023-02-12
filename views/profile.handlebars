@@ -3,10 +3,95 @@
     <h2>Welcome, {{name}}!</h2>
   </div>
 </div>
+<form class="form search-form">
+  <div class="form-group">
+    <label>Make</label>
+    <select id="carMake">
+      <option>Select</option>
+      <option value="Jeep">Jeep</option>
+      <option value="Ram">Ram</option>
+      <option value="Dodge">Dodge</option>
+      <option value="Chevrolet">Chevrolet</option>
+    </select>
+  </div>
+  {{!-- <label>Model</label>
+  <select>
+    <option>Select</option>
+    <option value="this.model">Gladiator</option>
+    <option value="this.model">TRX</option>
+    <option value="this.model">Challenger</option>
+    <option value="this.model">Corvette</option>
+  </select> --}}
+  <div class="form-group">
+    <label>Year</label>
+    <select id="carYear">
+      <option>Select</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+      <option value="2021">2021</option>
+      <option value="2020">2020</option>
+    </select>
+  </div>
+  {{!-- <label>Color</label>
+  <select>
+    <option>Select</option>
+    <option value="this.color">Red</option>
+    <option value="this.color">Orange</option>
+    <option value="this.color">Blue</option>
+    <option value="this.color">Purple</option>
+  </select> --}}
+   <div class="form-group">
+      <button class="btn btn-primary" type="submit">search</button>
+   </div>
+</form>
+<div id="carList">
+  
+</div>
+<section class="search">
+  {{search}}
+</section>
+
+<script src="./js/profile.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{!-- <div class="row">
+  <div class="col-auto">
+    <h2>Welcome, {{name}}!</h2>
+  </div>
+</div>
 
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3>Your Saved Searches!</h3>
+    <h3>Your Saved Searches!</h3> --}}
 
   </div> 
-<script src="/js/profile.js"></script>

@@ -27,6 +27,7 @@
     "handlebars": "^4.7.7",
     "mysql": "^2.18.1",
     "mysql2": "^3.1.2",
+    "password-revealer": "^1.1.1",
     "sequelize": "^6.28.0"
   }
 }

@@ -27,6 +27,14 @@ Car.init(
             allowNull: false
         },
 
+        kbbURL: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
+        autoTraderURL: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
         type: {
             type: DataTypes.STRING,
             allowNull: false
