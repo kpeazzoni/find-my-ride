@@ -1,6 +1,6 @@
 const loginFormHandler = async (event) => {
   event.preventDefault();
-
+  console.log('hello...');
   // Collect values from the login form
   const email = document.querySelector('#email-login').value.trim();
   const password = document.querySelector('#password-login').value.trim();
@@ -13,17 +13,17 @@ const loginFormHandler = async (event) => {
       headers: { 'Content-Type': 'application/json' },
     });
 
+    console.log('response was: ' + response.status);
     if (response.ok) {
-      // If successful, redirect the browser to the profile page
-      await fetch('/profile', {
-        method: 'GET'
-      });
+      console.log('user successfully logged in..');
+      document.location.replace('/profile');
     } else {
-      alert(response.statusText);
+      const json = await response.json();
+      alert(json.message);
     }
   }
 };
 
 document
-  .querySelector('.login-form')
-  .addEventListener('submit', loginFormHandler);
+.querySelector('.login-form')
+.addEventListener('submit', loginFormHandler);

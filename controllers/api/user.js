@@ -3,6 +3,7 @@ const { User} = require('../../models');
 // const withAuth = require('../../utils/auth');
 
 router.post('/', async (req, res) => {
+  console.log(req.body);
     try {
       const userData = await User.create(req.body);
   
@@ -13,7 +14,9 @@ router.post('/', async (req, res) => {
         res.status(200).json(userData);
       });
     } catch (err) {
-      res.status(400).json(err);
+      let errorMessages = "";
+      err.errors.forEach(e => errorMessages += `\n ${e.message}`);
+      res.status(400).json({message: errorMessages});
     }
   });
   
@@ -39,7 +42,7 @@ router.post('/', async (req, res) => {
         req.session.user_id = userData.id;
         req.session.logged_in = true;
         
-        res.json({ user: userData, message: 'You are now logged in!' });
+        res.status(200).json({ user: userData, message: 'You are now logged in!' });
       });
   
     } catch (err) {
@@ -50,6 +53,7 @@ router.post('/', async (req, res) => {
   router.post('/logout', (req, res) => {
     if (req.session.logged_in) {
       req.session.destroy(() => {
+        console.log('logging user out...');
         res.status(204).end();
       });
     } else {
