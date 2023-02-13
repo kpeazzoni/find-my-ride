@@ -1,0 +1,14 @@
+<section class="saved-searches">
+  <h1>savedsearches</h1>
+  <!-- The contents of this card links to the gallery page using the gallery ID -->
+  {{!-- <a href="/profile/{{id}}"> --}}
+    <!-- The card contains the gallery name as the card header -->
+    <header></header>
+    {{#each carData as |car|}}
+    <a href={{car.kbbURL}}>
+    <h1>{{car.make}} {{car.model}}</h1></a>
+    {{/each}}
+  {{!-- </a> --}}
+</section>
+
+{{!-- <script src="./js/profile.js"></script> --}}

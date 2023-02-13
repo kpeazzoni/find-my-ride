@@ -18,27 +18,57 @@ const carDataSearchHandler = async (event) => {
         let carWrapper = document.createElement('div');
         carWrapper.className = "car-item";
         carWrapper.style.cssText = 'border-radius: 25px;border: 2px solid black;padding: 20px;margin-bottom: 20px;width:200px;height:200px;';
-    
+
         let carMake = document.createElement('h1');
         let carYear = document.createElement('h2');
         let carModel = document.createElement('h2');
-        let btn = document.createElement("BUTTON"); 
-        btn.id ='save-button';
+        let btn = document.createElement("BUTTON");
+        btn.setAttribute('id', 'save-button');
+        btn.setAttribute('data-make', json[i].make)
+        btn.setAttribute('data-model', json[i].model)
+        btn.setAttribute('data-year', json[i].year)
 
+        
         carMake.textContent = json[i].make;
         carYear.textContent = json[i].year;
         carModel.textContent = json[i].model;
         btn.textContent = "save car"
-        
+
         carWrapper.append(carMake);
         carWrapper.append(carYear);
         carWrapper.append(carModel);
         carWrapper.append(btn);
 
         carList.append(carWrapper);
+        
+        btn.addEventListener('click', addSavedSearch);
+    }
+};
+async function addSavedSearch(event) {
+    event.preventDefault();
+
+    const make = event.target.dataset.make
+    const model = event.target.dataset.model
+    const year = event.target.dataset.year
+
+        if(make && model && year) {
+        const savedData = await fetch('/api/car', {
+            method: 'POST',
+            body: JSON.stringify({ make, model, year }),
+            headers: { 'Content-Type': 'application/json' },
+       
+    });
+    if (savedData.ok) {
+        document.location.replace('/saved');
+    } else {
+        updateAlertBox(`This vehicle is already saved`);
+    }
+    // } catch (err) {
+    //     console.log(err);
+    // }
 }
 };
-// carDataSearchHandler();
+
 document
     .querySelector('.search-form')
     .addEventListener('submit', carDataSearchHandler);

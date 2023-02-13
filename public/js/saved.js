@@ -1,9 +1,6 @@
 async function savedSearches(event) {
     event.preventDefault();
   
-    const make = document.createElement('h2');
-    const year = document.createElement('h3');
-    const model = document.createElement('h3');
     
     try {
         const savedData = await fetch('/api/profile', {
