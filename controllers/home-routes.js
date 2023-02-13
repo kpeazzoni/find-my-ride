@@ -44,6 +44,7 @@ console.log(userData);
 
     res.render('profile', {
         ...userData,
+        savedData: {make: "BENZ", model: "C43", year: "2022"},
         logged_in: req.session.logged_in,
     }
 );
