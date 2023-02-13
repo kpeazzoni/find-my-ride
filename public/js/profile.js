@@ -5,6 +5,7 @@ const carDataSearchHandler = async (event) => {
     var make = document.querySelector('#carMake option:checked').value.trim();
     var year = document.querySelector('#carYear option:checked').value.trim();
     var carList = document.getElementById('carList');
+    var kbbUrl = document.getElementById('savedCar');
     const options = {
         method: 'GET',
         headers: {
@@ -22,7 +23,9 @@ const carDataSearchHandler = async (event) => {
         let carMake = document.createElement('h1');
         let carYear = document.createElement('h2');
         let carModel = document.createElement('h2');
-        
+
+    
+    
         carMake.textContent = json[i].make;
         carYear.textContent = json[i].year;
         carModel.textContent = json[i].model;
@@ -35,6 +38,31 @@ const carDataSearchHandler = async (event) => {
 }
 };
 
+
+
+
+
 document
     .querySelector('.search-form')
     .addEventListener('submit', carDataSearchHandler);
+
+
+    // document.getElementById('submit').onclick = function() {
+    //     var checkbox = document.createElement('input');
+    //         checkbox.type = 'checkbox';
+    //         checkbox.id = 'car';
+    //         checkbox.name = 'interest';
+    //         checkbox.value = 'car';
+     
+    //     var label = document.createElement('label')
+    //     label.htmlFor = 'car';
+    //     label.appendChild(document.createTextNode('Car'));
+     
+    //     var br = document.createElement('br');
+     
+    //     var container = document.getElementById('container');
+    //     container.appendChild(checkbox);
+    //     container.appendChild(label);
+    //     container.appendChild(br);
+    // }
+    
