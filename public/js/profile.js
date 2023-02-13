@@ -41,7 +41,6 @@ const carDataSearchHandler = async (event) => {
 
 
 
-
 document
     .querySelector('.search-form')
     .addEventListener('submit', carDataSearchHandler);

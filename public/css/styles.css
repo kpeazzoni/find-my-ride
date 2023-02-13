@@ -13,6 +13,8 @@
 /* ------------------------------------------MAIN---------------------------------------------------------- */
 body {
     background-color: #284B63;
+    background-image: url(./gray\ background\ banner1676314866.jpeg);
+    background-repeat: no-repeat;
 }
 .appTitleCard {
     text-align: center;
@@ -65,3 +67,4 @@ body {
 #email-login {
  
 }
+
