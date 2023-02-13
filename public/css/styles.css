@@ -46,7 +46,7 @@ body {
     height: fit-content;
 }
 
-.btn-primary {
+.btn {
     background-color: #353535;
     border-color: #353535;
     margin-bottom: 10px;
@@ -54,7 +54,7 @@ body {
     
 }
 
-.btn-primary:hover  {
+.btn:hover  {
     background-color: #3C6E71;
 }
 
