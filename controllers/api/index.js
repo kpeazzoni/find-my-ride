@@ -1,8 +1,9 @@
 const router = require('express').Router();
 const user = require('./user');
-// const search = require('./search');
+const profileRoutes = require('./profile')
+
 
 router.use('/users', user);
-// router.use('/search', search);
+router.use('/profile', profileRoutes)
 
 module.exports = router;
