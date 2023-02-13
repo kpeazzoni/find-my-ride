@@ -23,15 +23,9 @@ const carDataSearchHandler = async (event) => {
         let carMake = document.createElement('h1');
         let carYear = document.createElement('h2');
         let carModel = document.createElement('h2');
-<<<<<<< HEAD
-
-    
-    
-=======
         let btn = document.createElement("BUTTON"); 
         btn.id ='save-button';
 
->>>>>>> ddd74aae46cdc5350ee7a20b3a69032153fd6b34
         carMake.textContent = json[i].make;
         carYear.textContent = json[i].year;
         carModel.textContent = json[i].model;
@@ -45,14 +39,7 @@ const carDataSearchHandler = async (event) => {
         carList.append(carWrapper);
 }
 };
-<<<<<<< HEAD
-
-
-
-
-=======
 // carDataSearchHandler();
->>>>>>> ddd74aae46cdc5350ee7a20b3a69032153fd6b34
 document
     .querySelector('.search-form')
     .addEventListener('submit', carDataSearchHandler);

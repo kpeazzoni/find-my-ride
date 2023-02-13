@@ -13,14 +13,20 @@
 /* ------------------------------------------MAIN---------------------------------------------------------- */
 body {
     background-color: #284B63;
-    background-image: url(./gray\ background\ banner1676314866.jpeg);
-    background-repeat: no-repeat;
+    /* background-image: url(./gray\ background\ banner1676314866.jpeg);
+    background-repeat: no-repeat; */
 }
+
 .appTitleCard {
-    text-align: center;
+    /* text-align: center;
     background-color: #353535;
-    height: 50px;
-    
+    height: 50px; */ background-color: #284B63;
+    background-image: url(./gray\ background\ banner\ \(1\).png);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 265px;
+    /* margin-left: 31%; */
+    margin: auto;
 }
 .appTitle {
     color: #353535;
@@ -39,32 +45,35 @@ body {
 
 .cardTitle {
     text-align: center;
+    font-size: 40px;
 }
 
 #signup-form {
     background-color: #D9D9D9;
     border-radius: 3px;
     box-shadow: 5px 5px#353535;
-    height: fit-content;
+    height: 300px;
 }
 
 .btn {
     background-color: #353535;
     border-color: #353535;
-    margin-bottom: 10px;
-    width: 40%;
-    
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 30%;
+    margin-top: 20px;
 }
 
 .btn:hover  {
     background-color: #3C6E71;
 }
 
-.form-group {
-    margin-left: 20%;
-}
 
-#email-login {
- 
+input {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%
 }
 
