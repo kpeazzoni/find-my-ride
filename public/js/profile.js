@@ -2,7 +2,7 @@
 const carDataSearchHandler = async (event) => {
     event.preventDefault();
     // Collect values from the login form
-    var make = document.querySelector('#carMake option:checked').value.trim();
+    var make = document.querySelector('#carMake').value.trim();
     var year = document.querySelector('#carYear option:checked').value.trim();
     var carList = document.getElementById('carList');
     const options = {
