@@ -18,7 +18,22 @@ body {
     height: 1000px;
     background-repeat: no-repeat;
 }
+.backgroundBox {
+    
+    background-color: #949494;
+    margin-right: 6%;
+    margin-left: 6%;
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    height: fit-content;
+    border-radius: 15px;
+    box-shadow: 0px 20px 40px 20px #0ff;
+}
 
+.backgroundBox:hover {
+    box-shadow: 0px 20px 50px 20px #0ff;
+}
 .appTitleCard {
     
    
@@ -43,7 +58,10 @@ body {
 #loginFormCard {
     background-color: #D9D9D9;
     border-radius: 3px;
-    box-shadow: 5px 5px#353535;
+    /* box-shadow: 5px 5px#353535; */
+    box-shadow: 5px 10px 10px 5px #353535;
+    padding-bottom: 20px;
+    height: fit-content;
 }
 
 .cardTitle {
@@ -57,8 +75,30 @@ body {
 #signup-form {
     background-color: #D9D9D9;
     border-radius: 3px;
-    box-shadow: 5px 5px#353535;
-    height: 300px;
+    /* box-shadow: 5px 5px#353535; */
+    box-shadow: 5px 10px 10px 5px #353535;
+    height: fit-content;
+    padding-bottom: 20px;
+    
+}
+
+#signUpBtn {
+   
+}
+
+.checkbox {
+    position: relative;
+    display: inherit;
+    top: 40%;
+    
+}
+
+#loginCheckbox{
+    margin-bottom: 73px;
+}
+
+#show {
+    margin-left: 42%;
 }
 
 
@@ -90,6 +130,7 @@ margin-bottom: 20px;
     letter-spacing: 2px;
     box-shadow: 0 6px #353535;
     height: 40px;
+    margin-top: 20px;
     
 }
   
