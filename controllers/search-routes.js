@@ -24,6 +24,3 @@ console.log(userData);
 });
 
 module.exports = router;
-
-
-module.exports = router;
