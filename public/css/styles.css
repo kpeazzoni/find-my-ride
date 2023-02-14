@@ -61,19 +61,6 @@ body {
     height: 300px;
 }
 
-/* .btn {
-    background-color: #353535;
-    border-color: #353535;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 30%;
-    margin-top: 20px;
-}
-
-.btn:hover  {
-    background-color: #3C6E71;
-} */
 
 
 input {
@@ -83,7 +70,7 @@ input {
     width: 70%;
 }
 
-#password-login, #password-signup {
+#password-login, #password-field {
 margin-bottom: 20px;
 }
 
@@ -94,7 +81,6 @@ margin-bottom: 20px;
     border: none;
     cursor: pointer;
     background: #3C6E71;
-    /* padding: 20px 80px; */
     padding-top: 0px;
     margin: 0 auto;
     font-size: 26px;
@@ -138,4 +124,10 @@ margin-bottom: 20px;
     margin: auto;
     width: 10%;
     margin-bottom: 30px;
+}
+
+.saved-car {
+    text-align: none;
+    margin: 1rem;
+    color: var(--bs-body-color);
 }

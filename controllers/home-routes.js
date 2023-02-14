@@ -1,5 +1,4 @@
-// this needs to have the res.render('login') in an if else statement - if they have a login - displaoy res.render('login')
-// else- display  res.render('signup')
+
 const router = require('express').Router();
 const { User, Car } = require('../models');
 const withAuth = require('../utils/Auth');
@@ -23,15 +22,6 @@ router.get('/', withAuth, async (req, res) => {
     }
 });
 
-// router.get('/login', (req, res) => {
-
-//     if (req.session.logged_in) {
-//         res.render('/');
-//     }
-//     else {
-//         res.render('login');
-//     }
-// });
 
 router.get('/profile', withAuth, async (req, res) => {
     const userId = req.session.user_id;
@@ -64,6 +54,6 @@ router.get('/saved', withAuth, async (req, res) => {
 });
 
 
-// make a call to the database finding the user that is logged in, all their saved cars. 
+
 
 module.exports = router;
