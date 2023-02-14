@@ -2,7 +2,7 @@
 
 ## Description
 
-This site was created using Javascript, Node.js, Handlebars, MySQl
+This site was created for project 2 of the coding bootcamp at UT Austin using Javascript, Node.js, Handlebars.js, MySQl. Deployed is a landing page with sign up and login forms. Once user has signed up they can search for vehicle
 
 
 ## Table of Contents
@@ -39,6 +39,7 @@ This site was created using Javascript, Node.js, Handlebars, MySQl
 
 
 ## Links
+
 
 ## License
 
