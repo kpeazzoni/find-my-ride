@@ -7,14 +7,16 @@
 }
 /* ------------------------------------------everything----------------------------------------------------- */
 * {
-
+    
 }
 
 /* ------------------------------------------MAIN---------------------------------------------------------- */
 body {
-    background-color: #284B63;
+    background-image: linear-gradient(#284b63 30%, #FFFFFF );
     /* background-image: url(./gray\ background\ banner1676314866.jpeg);
     background-repeat: no-repeat; */
+    height: 1000px;
+    background-repeat: no-repeat;
 }
 
 .appTitleCard {
