@@ -81,7 +81,7 @@ input {
     width: 70%;
 }
 
-#password-login, #password-signup {
+#password-login, #password-field {
 margin-bottom: 20px;
 }
 
@@ -136,4 +136,10 @@ margin-bottom: 20px;
     margin: auto;
     width: 10%;
     margin-bottom: 30px;
+}
+
+.saved-car {
+    text-align: none;
+    margin: 1rem;
+    color: var(--bs-body-color);
 }
