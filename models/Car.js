@@ -31,14 +31,6 @@ Car.init(
             type: DataTypes.STRING,
             allowNull: true
         },
-        // autoTraderURL: {
-        //     type: DataTypes.STRING,
-        //     allowNull: true
-        // },
-        // type: {
-        //     type: DataTypes.STRING,
-        //     allowNull: false
-        // },
 
         user_id: {
             type: DataTypes.INTEGER,
