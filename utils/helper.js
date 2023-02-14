@@ -1,1 +1,0 @@
-// helpers for js files to keep it DRY

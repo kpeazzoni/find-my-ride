@@ -13,8 +13,6 @@ router.post('/', async (req, res) => {
             res.status(200).json(carData);
         }
         catch (err) {
-            // let errorMessages = "";
-            // err.errors.forEach(e => errorMessages += `\n ${e.message}`);
             res.status(400).json(err);
       }
 });
