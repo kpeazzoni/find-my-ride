@@ -55,7 +55,7 @@ body {
     height: 300px;
 }
 
-.btn {
+/* .btn {
     background-color: #353535;
     border-color: #353535;
     display: block;
@@ -67,7 +67,7 @@ body {
 
 .btn:hover  {
     background-color: #3C6E71;
-}
+} */
 
 
 input {
@@ -75,5 +75,51 @@ input {
     margin-right: auto;
     margin-left: auto;
     width: 70%
+}
+
+#password-login, #password-signup {
+margin-bottom: 20px;
+}
+
+.btn {
+    position: relative;
+    display: block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: #3C6E71;
+    /* padding: 20px 80px; */
+    padding-top: 0px;
+    margin: 0 auto;
+    font-size: 26px;
+    color: #fff;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 6px #353535;
+    height: 40px;
+    
+}
+  
+.btn:hover {
+    top: 2px;
+    box-shadow: 0 4px #353535;
+    background-color: #3C6E71;
+}
+  
+.btn:active {
+    top: 6px;
+    box-shadow: 0 0 #353535;
+}
+
+/* --------------------------profile------------------------------------------ */
+#welcome {
+    color: #fff;
+  text-align: center;
+}
+
+#welcomeRow {
+   display: block;
+   margin: auto;
 }
 
