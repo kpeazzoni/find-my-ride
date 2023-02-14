@@ -1,4 +1,6 @@
 // js for search goes here profile.handlebars
+// const axios = require('axios');
+
 const carDataSearchHandler = async (event) => {
     event.preventDefault();
     // Collect values from the login form
@@ -6,15 +8,40 @@ const carDataSearchHandler = async (event) => {
     var year = document.querySelector('#carYear option:checked').value.trim();
     var carList = document.getElementById('carList');
     var kbbUrl = document.getElementById('savedCar');
+   
+
+    // const options = {
+    //     method: 'GET',
+    //     url: 'https://car-data.p.rapidapi.com/cars?limit=15&page=0',
+    //     params: {limit: '10', page: '0'},
+    //     headers: {
+    //       'X-RapidAPI-Key': '495e45f322msh4fca825b3c3afa3p19ec03jsnd3b134bddfbd',
+    //       'X-RapidAPI-Host': 'car-data.p.rapidapi.com'
+    //     }
+    //   };
+    //   let carApi = 'https://car-data.p.rapidapi.com/cars?limit=15&page=0';
+
+    // if (make && make != '') {
+    //     carApi += `&make=${make}`;
+    // }
+    // if (year && year != '') {
+    //     carApi += `&year=${year}`
+    // }
+      
+    //   const json = await axios.get(options).then(function (response) {
+    //       console.log(response.data);
+    //   }).catch(function (error) {
+    //       console.error(error);
+    //   });
+
     const options = {
         method: 'GET',
         headers: {
             'X-RapidAPI-Key': '495e45f322msh4fca825b3c3afa3p19ec03jsnd3b134bddfbd',
             'X-RapidAPI-Host': 'car-data.p.rapidapi.com'
         }
-    };
-
-    let carApi = 'https://car-data.p.rapidapi.com/cars?limit=50&page=0';
+    };  
+    let carApi = 'https://car-data.p.rapidapi.com/cars';
 
     if (make && make != '') {
         carApi += `&make=${make}`;
