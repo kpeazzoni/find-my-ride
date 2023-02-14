@@ -27,7 +27,7 @@ const carDataSearchHandler = async (event) => {
     for (var i = 0; i < json.length; i++) {
         let carWrapper = document.createElement('div');
         carWrapper.className = "car-item";
-        carWrapper.style.cssText = 'border-radius: 25px;border: 2px solid black;padding: 20px;margin-bottom: 20px;width:200px;height:200px;';
+        carWrapper.style.cssText = 'border-radius: 25px;border: 2px solid black;padding: 20px;margin-bottom: 20px;width: fit-content;background-color: #D9D9D9;box-shadow: 10px 5px 5px #353535;';
 
         let carMake = document.createElement('h1');
         let carYear = document.createElement('h2');
