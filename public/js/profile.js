@@ -2,7 +2,7 @@
 const carDataSearchHandler = async (event) => {
     event.preventDefault();
     // Collect values from the login form
-    var make = document.querySelector('#carMake option:checked').value.trim();
+    var make = document.querySelector('#carMake').value.trim();
     var year = document.querySelector('#carYear option:checked').value.trim();
     var carList = document.getElementById('carList');
     var kbbUrl = document.getElementById('savedCar');
@@ -13,6 +13,15 @@ const carDataSearchHandler = async (event) => {
             'X-RapidAPI-Host': 'car-data.p.rapidapi.com'
         }
     };
+
+    let carApi = 'https://car-data.p.rapidapi.com/cars?limit=50&page=0';
+
+    if (make && make != '') {
+        carApi += `&make=${make}`;
+    }
+    if (year && year != '') {
+        carApi += `&year=${year}`
+    }
     const response = await fetch(`https://car-data.p.rapidapi.com/cars?limit=15&page=0&year=${year}&make=${make}`, options);
     const json = await response.json();
     for (var i = 0; i < json.length; i++) {
@@ -57,12 +66,12 @@ async function addSavedSearch(event) {
             method: 'POST',
             body: JSON.stringify({ make, model, year }),
             headers: { 'Content-Type': 'application/json' },
-       
     });
     if (savedData.ok) {
         document.location.replace('/saved');
+        console.log(savedData);
     } else {
-        updateAlertBox(`This vehicle is already saved`);
+        alert(`This vehicle is already saved`);
     }
     // } catch (err) {
     //     console.log(err);
