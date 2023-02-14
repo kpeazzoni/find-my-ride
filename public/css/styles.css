@@ -59,19 +59,6 @@ body {
     height: 300px;
 }
 
-/* .btn {
-    background-color: #353535;
-    border-color: #353535;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 30%;
-    margin-top: 20px;
-}
-
-.btn:hover  {
-    background-color: #3C6E71;
-} */
 
 
 input {
@@ -92,7 +79,6 @@ margin-bottom: 20px;
     border: none;
     cursor: pointer;
     background: #3C6E71;
-    /* padding: 20px 80px; */
     padding-top: 0px;
     margin: 0 auto;
     font-size: 26px;
