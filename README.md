@@ -24,6 +24,7 @@ This site was created for project 2 of the coding bootcamp at UT Austin using Ja
 **WHEN**  I search for a vehicle.
 
 **THEN**  I can search for a rona vehicle by make and/or model.
+
 ---
 
 ## Credits
