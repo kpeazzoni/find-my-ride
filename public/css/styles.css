@@ -222,11 +222,11 @@ margin-bottom: 20px;
 
 
 /* -----------------------------SAVED PAGE-------------------------------- */
-.saved-car {
-    text-align: none;
-    margin: 1rem;
-    color: var(--bs-body-color);
-}
+    .saved-car {
+        text-align: none;
+        margin: 1rem;
+        color: var(--bs-body-color);
+    }
 
 #save-button:hover {
     top: 2px;
