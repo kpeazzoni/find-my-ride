@@ -1,11 +1,11 @@
 <section class="saved-searches">
-  <h1>Saved Searches</h1>
+  <h1 class="savedSearches">Saved Searches</h1>
  
     <header></header>
     <div id="carList">
       {{#each carData as |car|}}
       <div class="car-item"
-        style="border-radius: 25px; border: 2px solid black; padding: 20px; margin-bottom: 20px; width: auto; height: auto;">
+        style="border-radius: 15px; border: 2px solid black; padding: 20px; margin-bottom: 20px; width: auto; height: auto;background-color: #D9D9D9;box-shadow: 10px 5px 5px #353535;display: inline-block; margin: 20px 20px;">
         <img src="https://www.willow-car-sales.co.uk/wp-content/uploads/2019/11/placeholder-image-1.jpg" style="width:12rem;height:auto;">
         <a class="saved-car" href={{car.kbbURL}}>
           <h1>{{car.make}} {{car.model}} {{car.year}}</h1>

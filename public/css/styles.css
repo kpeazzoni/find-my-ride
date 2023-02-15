@@ -79,7 +79,6 @@ body {
     box-shadow: 5px 10px 10px 5px #353535;
     height: fit-content;
     padding-bottom: 20px;
-    
 }
 
 #signUpBtn {
@@ -226,6 +225,12 @@ margin-bottom: 20px;
     text-align: none;
     margin: 1rem;
     color: var(--bs-body-color);
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+}
+.savedSearches {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 #save-button:hover {
