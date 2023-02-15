@@ -3,21 +3,16 @@
     <h2 id="welcome">Welcome, {{name}}!</h2>
   
 <form class="form search-form">
-  <div class="form-group">
+  <div class="form-group" id="makeInput">
     <label></label>
      <input placeholder="Type in a make of a vehicle" type="text" id="carMake" name="Car Make"><br>
      </div>
       
   <div class="form-group" id="carYearGroup">
-    <label></label>
+    {{!-- <label></label> --}}
     <select id="carYear">
-      <option value="">Select a year</option>
-      <option value="2023">2023</option>
-      <option value="2022">2022</option>
-      <option value="2021">2021</option>
+      <option value="">SELECT A YEAR</option>
       <option value="2020">2020</option>
-      <option value="2020">2019</option>
-
     </select>
   </div>
 

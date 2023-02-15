@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
       <h1 class="appTitleCard">
@@ -21,13 +22,14 @@
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
+        <a href="/profile"></a> 
         <button class="no-btn" id="logout">logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login"></a>
         {{/if}}
       </nav>
     </header>
+    <section class="backgroundBox">
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
       {{{ body }}}
@@ -35,8 +37,9 @@
     <footer>
       
     </footer>
+    </section>
   </div>
-
+{{!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.3/axios.js" integrity="sha512-uap0bTaa/bPjLtLVuiWS+qak4SJrOPcdfVzUdrrE7LgvtMlkV6DeiBH7Rgt7B+74M3crOr3QdTX3gCTMMRVzZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> --}}
   <!-- Render script for logged in users only -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   {{#if logged_in}}
