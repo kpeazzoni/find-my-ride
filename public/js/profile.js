@@ -60,7 +60,7 @@ const carDataSearchHandler = async (event) => {
         let carYear = document.createElement('h2');
         let carModel = document.createElement('h2');
         let btn = document.createElement("BUTTON");
-        btn.style.cssText = 'position: relative;display: block;outline: none;border: none;cursor: pointer;background: #3C6E71;padding-top: 0px;margin: 0 auto;font-size: 16px;color: #fff;border-radius: 10px;letter-spacing: 1.5px;box-shadow: 0 6px #353535;height: 20px;margin-top: 20px;'
+        btn.style.cssText = 'position: relative;display: block;outline: none;border: none;cursor: pointer;background: #3C6E71;padding-top: 0px;margin: 0 auto;font-size: 16px;color: #fff;border-radius: 10px;letter-spacing: 1.5px;box-shadow: 0 6px #353535;height: 20px;margin-top: 20px;';
         btn.setAttribute('id', 'save-button');
         btn.setAttribute('data-make', json[i].make)
         btn.setAttribute('data-model', json[i].model)
