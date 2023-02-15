@@ -41,9 +41,19 @@ This site was created for project 2 of the coding bootcamp at UT Austin using Ja
 
 ---
 
-## Screenshots
+## Usage
 
+![this is a image](./assets/Screenshot%202023-02-14%20at%2011.17.46%20PM.png)
 
+![this is a image](./assets/Screenshot%202023-02-14%20at%2011.18.05%20PM.png)
+
+![this is a image](./assets/Screenshot%202023-02-15%20at%2010.26.49%20AM.png)
+
+![this is a image](./assets/Screenshot%202023-02-15%20at%2010.27.03%20AM.png)
+
+![this is a image](./assets/Screenshot%202023-02-15%20at%2010.27.52%20AM.png)
+
+![this is a image](./assets/Screenshot%202023-02-15%20at%2010.28.01%20AM.png)
 
 
 
@@ -67,3 +77,4 @@ In the future we plan to add search fields, being able to edit saved vehicle alo
 
 ## License
 
+This app is covered under the MIT license.
