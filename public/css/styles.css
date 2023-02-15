@@ -227,3 +227,14 @@ margin-bottom: 20px;
     margin: 1rem;
     color: var(--bs-body-color);
 }
+
+#save-button:hover {
+    top: 2px;
+    box-shadow: 0 2px #353535;
+    background-color: #3C6E71;
+}
+
+#save-button:active{
+    top: 6px;
+    box-shadow: 0 0 #353535;
+}
